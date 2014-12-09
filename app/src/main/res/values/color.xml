@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff1d9408</color>
+    <color name="colorPrimaryDark">#ff42f52a</color>
+    <!--<color name="colorPrimary">@color/material_blue_grey_800</color>-->
+    <!--<color name="colorPrimaryDark">@color/material_blue_grey_900</color>-->
+
+    <color name="colorSecondary">@color/material_deep_teal_200</color>
+    <color name="colorSecondaryDark">@color/material_deep_teal_500</color>
+
+    <color name="windowBackgroundColor">#27b4c6ae</color>
+    <color name="black_translucent">#ff0f0f22</color>
+    
+    <color name="green">#ff38d124</color>
+
+    <color name="yellow">#FFFF00</color>
+    <color name="light_white">#DCDCDC</color>
+
+    <color name="green_dark">#3c6e02</color>
+    <color name="blue">#0044e1</color>
+    <color name="blue_dark">#00217c</color>
+    <color name="red">#d11e2c</color>
+    <color name="red_dark">#810f19</color>
+    <color name="gray">#b6b1ac</color>
+    <color name="gray_dark">#6d6967</color>
+    <color name="black">#000000</color>
+    <color name="black_pressed">#7b7b7b</color>
+</resources>

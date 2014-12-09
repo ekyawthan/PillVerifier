@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PillVerifier</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity_manual">ActivityManual</string>
+    <string name="action_left">Find Manual</string>
+    <string name="action_mid">Scan NDC</string>
+    <string name="action_right">Snap A Pill</string>
+
+    <string-array name="pill_color">
+        <item>BLACK</item>
+        <item>BLUE</item>
+        <item>BROWN</item>
+        <item>GRAY</item>
+        <item>GREEN</item>
+        <item>ORANGE</item>
+        <item>PINK</item>
+        <item>PURPLE</item>
+        <item>RED</item>
+        <item>TURQUOISE</item>
+        <item>WHITE</item>
+        <item>YELLOW</item>
+    </string-array>
+    <string-array name="pill_shape">
+        <item>Capsule</item>
+        <item>Bullet</item>
+        <item>Clover</item>
+        <item>Diamond</item>
+        <item>Double Circle</item>
+        <item>Freeform</item>
+        <item>Gear</item>
+        <item>Heptagon</item>
+        <item>Hexagon</item>
+        <item>Octagon</item>
+        <item>Oval</item>
+        <item>Pentagon</item>
+        <item>Rectangle</item>
+        <item>Round</item>
+        <item>Semi-Circle</item>
+        <item>Square</item>
+        <item>Triangle</item>
+    </string-array>
+
+    <string name="title_activity_pill_grid_view">PillGridViewActivity</string>
+    <string name="title_activity_detail_drug">DetailDrugActivity</string>
+    <string name="title_activity_capture">CaptureActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_baro_code_scanner">BaroCodeScanner</string>
+
+</resources>

@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="edu.ccny.cs.kyaw.pillverifier.ActivityManual">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/windowBackgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+       <Button
+           android:text="ID A Drug"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:padding="10dp"
+            android:background="@android:color/white"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:hint="Imprint"
+                android:id="@+id/edit_textImprint"
+                android:textColorHint="@color/background_material_dark"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/background_material_dark"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/spinnerShape"
+                android:background="@color/green"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+            <Spinner
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/spinnerColor"
+                android:background="@color/green"
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:text="Find it !"
+                android:onClick="didClickOnFindItFromManual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+      </LinearLayout>
+
+
+
+</LinearLayout>

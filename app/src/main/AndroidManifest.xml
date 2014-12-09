@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.ccny.cs.kyaw.pillverifier" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityManual"
+            android:label="@string/title_activity_activity_manual" >
+        </activity>
+        <activity
+            android:name=".PillGridViewActivity"
+            android:label="@string/title_activity_pill_grid_view" >
+        </activity>
+        <activity
+            android:name=".DetailDrugActivity"
+            android:label="@string/title_activity_detail_drug" >
+        </activity>
+        <activity
+            android:name=".scanner.CaptureActivity"
+            android:label="@string/title_activity_capture" >
+        </activity>
+        <activity
+            android:name=".scanner.HelpActivity"
+            android:label="@string/title_activity_help" >
+        </activity>
+        <activity
+            android:name=".scanner.BaroCodeScanner"
+            android:label="@string/title_activity_baro_code_scanner" >
+        </activity>
+    </application>
+
+</manifest>

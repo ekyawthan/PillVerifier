@@ -1,0 +1,33 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_white"
+
+    tools:context="edu.ccny.cs.kyaw.pillverifier.scanner.BaroCodeScanner">
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbarfromScanner"/>
+    <GridView
+        android:layout_below="@id/toolbarfromScanner"
+        android:id="@+id/gridViewScanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></GridView>
+
+    <Button
+
+        android:layout_width="fill_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Scan Again!"
+        android:onClick="didSClickOnScanAgain"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
