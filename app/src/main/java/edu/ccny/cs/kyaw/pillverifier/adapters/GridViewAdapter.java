@@ -39,10 +39,10 @@ public class GridViewAdapter extends BaseAdapter {
         notifyDataSetChanged();
     }
 
-    public static class  ViewHolder {
-        SmartImageView imageView;
-        TextView textViewRx;
-    }
+//    public static class  ViewHolder {
+//        SmartImageView imageView;
+//        TextView textViewRx;
+//    }
     @Override
     public int getCount() {
         return viewArrayList.size();

@@ -10,11 +10,15 @@
     <include
         layout="@layout/toolbar"
         android:id="@+id/toolbarfromScanner"/>
-    <GridView
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/smartImageViewBarCode"
         android:layout_below="@id/toolbarfromScanner"
-        android:id="@+id/gridViewScanner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></GridView>
+        android:layout_height="240dp" />
+    <View
+        android:background="@color/background_material_dark"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
 
     <Button
 

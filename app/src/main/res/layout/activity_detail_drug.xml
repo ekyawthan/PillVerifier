@@ -7,7 +7,7 @@
     <include
         android:id="@+id/toolbar_detailSpecific"
         layout="@layout/toolbar"/>
-    <ImageView
+    <com.loopj.android.image.SmartImageView
         android:id="@+id/imageViewSpecific"
         android:layout_width="match_parent"
         android:layout_height="400dp"

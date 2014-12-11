@@ -18,62 +18,48 @@
         <include
             android:id="@+id/toolbar"
             layout="@layout/toolbar"/>
-        <!--<LinearLayout-->
-            <!--android:orientation="vertical"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent">-->
-            <!--<Button-->
-                <!--android:text="ID A Pill"-->
+        <Button
+            android:text="Senior Design: Pill Verifier"
+            android:textColor="@color/primary_dark_material_dark"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/buttonHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textVewHelper"
+            android:layout_below="@id/buttonHeader"
+            android:text="By"
+            android:textColor="@color/primary_dark_material_dark"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_below="@id/textVewHelper"
+            android:id="@+id/buttonName"
+            android:text="Kyaw Than Mong"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorSecondaryDark"
 
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content" />-->
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/buttonName"
+            android:id="@+id/profGern"
+            android:text="Advisor : Prof. Gertner"
+            android:gravity="center_horizontal"
+            android:textColor="@color/primary_dark_material_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/about_app"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/profGern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-            <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
-                <!--&lt;!&ndash;android:gravity="center_horizontal"&ndash;&gt;-->
-                <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
-                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
-                <!--&lt;!&ndash;android:layout_height="match_parent">&ndash;&gt;-->
-                <!--&lt;!&ndash;<Button&ndash;&gt;-->
-                    <!--&lt;!&ndash;android:background="@color/colorSecondary"&ndash;&gt;-->
-                    <!--&lt;!&ndash;android:text="Manual"&ndash;&gt;-->
-                    <!--&lt;!&ndash;android:onClick="didClickOnManual"&ndash;&gt;-->
-                    <!--&lt;!&ndash;android:layout_width="120dp"&ndash;&gt;-->
-                    <!--&lt;!&ndash;android:layout_height="120dp" />&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<Button&ndash;&gt;-->
-                    <!--&lt;!&ndash;android:padding="1dp"&ndash;&gt;-->
-                    <!--&lt;!&ndash;android:background="@color/colorSecondaryDark"&ndash;&gt;-->
-                    <!--&lt;!&ndash;android:text="Scan NDC"&ndash;&gt;-->
-                    <!--&lt;!&ndash;android:layout_width="120dp"&ndash;&gt;-->
-                    <!--&lt;!&ndash;android:layout_height="120dp" />&ndash;&gt;-->
-                <!--&lt;!&ndash;<Button&ndash;&gt;-->
-                    <!--&lt;!&ndash;android:background="@color/colorSecondary"&ndash;&gt;-->
-                    <!--&lt;!&ndash;android:text="SNAP"&ndash;&gt;-->
-                    <!--&lt;!&ndash;android:layout_width="120dp"&ndash;&gt;-->
-                    <!--&lt;!&ndash;android:layout_height="120dp" />&ndash;&gt;-->
-                <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
-
-
-
-            <!--&lt;!&ndash;<GridView&ndash;&gt;-->
-                <!--&lt;!&ndash;android:id="@+id/gridView"&ndash;&gt;-->
-                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
-                <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
-                <!--&lt;!&ndash;android:padding="4dp"&ndash;&gt;-->
-                <!--&lt;!&ndash;android:clipToPadding="false"&ndash;&gt;-->
-                <!--&lt;!&ndash;android:columnWidth="@dimen/item_width"&ndash;&gt;-->
-                <!--&lt;!&ndash;android:numColumns="auto_fit"&ndash;&gt;-->
-                <!--&lt;!&ndash;android:horizontalSpacing="4dp"&ndash;&gt;-->
-                <!--&lt;!&ndash;android:verticalSpacing="4dp"&ndash;&gt;-->
-                <!--&lt;!&ndash;android:stretchMode="columnWidth"/>&ndash;&gt;-->
-            <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
-        <!--<Button-->
-            <!--android:background="@color/colorPrimary"-->
-            <!--android:layout_width="fill_parent"-->
-            <!--android:layout_height="wrap_content" />-->
-        <!--<RelativeLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent">-->
 
         <lt.lemonlabs.android.expandablebuttonmenu.ExpandableMenuOverlay
             android:id="@+id/button_menu"
@@ -82,7 +68,7 @@
             android:layout_height="0dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/ic_launcher"
+            android:src="@drawable/pharmacy_icon"
 
             ebm:dimAmount="0.8"
 

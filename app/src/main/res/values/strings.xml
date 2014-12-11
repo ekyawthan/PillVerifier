@@ -48,5 +48,10 @@
     <string name="title_activity_capture">CaptureActivity</string>
     <string name="title_activity_help">HelpActivity</string>
     <string name="title_activity_baro_code_scanner">BaroCodeScanner</string>
+    <string name="about_app">The application, a Mobile application to identify
+        medication mainly using image based search and text detection from an image,
+        and optionally text input search. Application takes input an image of medication,
+        exact information of the pill using text detection from an image (OCR) i.e.
+        imprint on the pill, analysis information using U.S National Medication Library API, and print result.</string>
 
 </resources>

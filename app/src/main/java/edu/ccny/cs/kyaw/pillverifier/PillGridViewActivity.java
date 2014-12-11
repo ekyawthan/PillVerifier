@@ -19,6 +19,7 @@ import java.util.ArrayList;
 
 import edu.ccny.cs.kyaw.pillverifier.adapters.ConstantHelp;
 import edu.ccny.cs.kyaw.pillverifier.adapters.GridViewAdapter;
+import edu.ccny.cs.kyaw.pillverifier.adapters.ViewHolder;
 import edu.ccny.cs.kyaw.pillverifier.database.DatabaseHelper;
 import edu.ccny.cs.kyaw.pillverifier.model.ModelDrugGridView;
 
@@ -68,7 +69,11 @@ public class PillGridViewActivity extends ActionBarActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.e(TAG, String.valueOf(position));
+                ViewHolder viewHolder = new ViewHolder();
+                viewHolder =
+                        (ViewHolder) view.getTag();
+                DetailDrugActivity.lunch(PillGridViewActivity.this, view.findViewById(R.id.imageViewDrug),
+                        modelDrugGridViews.get(position).imageUrl );
             }
         });
     }

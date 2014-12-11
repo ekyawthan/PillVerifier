@@ -1,20 +1,21 @@
 package edu.ccny.cs.kyaw.pillverifier;
 
-import android.app.ActivityOptions;
+
 import android.content.Intent;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.ImageView;
+
 import android.widget.TextView;
 
-import java.awt.font.TextAttribute;
+
+import com.loopj.android.image.SmartImageView;
 
 import static edu.ccny.cs.kyaw.pillverifier.R.id.toolbar_detailSpecific;
 
@@ -23,7 +24,7 @@ public class DetailDrugActivity extends ActionBarActivity {
     public static final String EXTRA_IMAGE = "DetailActivity:image";
 
 
-    private ImageView imageView;
+    private SmartImageView imageView;
     private TextView rxStringEditText;
 
     @Override
@@ -41,13 +42,15 @@ public class DetailDrugActivity extends ActionBarActivity {
     }
 
     private void willRenderDataIntoView() {
+        imageView.setImageUrl(EXTRA_IMAGE);
+
 
 
     }
 
     private void willSetupView() {
 
-        imageView = (ImageView) findViewById(R.id.imageViewSpecific);
+        imageView = (SmartImageView) findViewById(R.id.imageViewSpecific);
         rxStringEditText = (TextView) findViewById(R.id.textviewRxstringSpecific);
 
 
@@ -72,6 +75,7 @@ public class DetailDrugActivity extends ActionBarActivity {
                         transitionView, EXTRA_IMAGE);
         Intent intent = new Intent(actionBarActivity, DetailDrugActivity.class);
         intent.putExtra(EXTRA_IMAGE, Url);
+        Log.e("url", Url);
         ActivityCompat.startActivity(actionBarActivity, intent, optionsCompat.toBundle());
     }
 

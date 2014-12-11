@@ -70,7 +70,7 @@ public class ActivityManual extends ActionBarActivity implements InterfaceGetDru
 
     public void didClickOnFindItFromManual(View view){
         imprint = imprintEditText.getText().toString();
-        new GetDrugInfo(this, this, imprint);
+        new GetDrugInfo(this, this, imprint, "default", "default");
 
 
     }
