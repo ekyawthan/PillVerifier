@@ -27,7 +27,5 @@ dependencies {
     compile 'com.google.code.gson:gson:2.3.1'
     compile 'co.lemonlabs:expandable-button-menu:1.0.0'
     compile files('libs/android-smart-image-view-1.0.0.jar')
-    compile files('libs/zbar.jar')
-
-
+    compile project(':tess-two')
 }

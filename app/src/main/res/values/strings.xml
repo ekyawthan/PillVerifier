@@ -53,5 +53,9 @@
         and optionally text input search. Application takes input an image of medication,
         exact information of the pill using text detection from an image (OCR) i.e.
         imprint on the pill, analysis information using U.S National Medication Library API, and print result.</string>
+    <string name="title_activity_ocr">OcrActivity</string>
+
+    <string name="button_text">OCR!</string>
+    <string name="text_hint">OCRed Text will appear here</string>
 
 </resources>

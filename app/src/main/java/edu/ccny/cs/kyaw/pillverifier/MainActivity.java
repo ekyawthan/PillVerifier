@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import edu.ccny.cs.kyaw.pillverifier.database.DatabaseHelper;
+import edu.ccny.cs.kyaw.pillverifier.ocr.OcrActivity;
 import edu.ccny.cs.kyaw.pillverifier.scanner.BaroCodeScanner;
 import lt.lemonlabs.android.expandablebuttonmenu.ExpandableButtonMenu;
 import lt.lemonlabs.android.expandablebuttonmenu.ExpandableMenuOverlay;
@@ -67,6 +68,7 @@ public class MainActivity extends ActionBarActivity {
                         didClickOnManual();
                         break;
                     case RIGHT:
+                        didClickOnOCR();
                         break;
                 }
             }
@@ -84,6 +86,9 @@ public class MainActivity extends ActionBarActivity {
 
     public void didClickOnManual(){
         startActivity(new Intent(this, ActivityManual.class));
+    }
+    public void didClickOnOCR(){
+        startActivity(new Intent(this, OcrActivity.class));
     }
 
 
