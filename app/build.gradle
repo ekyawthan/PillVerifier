@@ -28,4 +28,6 @@ dependencies {
     compile 'co.lemonlabs:expandable-button-menu:1.0.0'
     compile files('libs/android-smart-image-view-1.0.0.jar')
     compile project(':tess-two')
+    compile 'com.android.support:recyclerview-v7:21.0.2'
+    compile 'com.android.support:cardview-v7:21.0.2'
 }
